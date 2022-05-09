@@ -6,8 +6,8 @@ require('dotenv/config');
 
 const db = process.env.DB_CONNECTION;
 
-const oblivionRoute =  require('./routes/oblivion');
-app.use('/oblivion', oblivionRoute);
+const recordsRoute =  require('./routes/records');
+app.use('/records', recordsRoute);
  
 app.get('/', (req, res) => {
     res.send('Genesis')
